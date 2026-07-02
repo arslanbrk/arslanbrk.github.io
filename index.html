@@ -14,19 +14,6 @@
             sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
             serif: ['"Source Serif 4"', 'Georgia', 'serif'],
           },
-          colors: {
-            ink: {
-              950: '#0a0f1e',
-              900: '#0f1629',
-              800: '#182036',
-              700: '#232e49',
-            },
-            accent: {
-              300: '#7dd3fc',
-              400: '#38bdf8',
-              500: '#0ea5e9',
-            },
-          },
         },
       },
     };
@@ -35,173 +22,129 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
   <style>
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-    .pub-card { transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; }
-    .pub-card:hover { transform: translateX(4px); }
-    ::selection { background: #0ea5e9; color: #fff; }
+    ::selection { background: #2563eb; color: #fff; }
   </style>
 </head>
-<body class="bg-ink-950 text-slate-300 font-sans antialiased">
+<body class="bg-white text-slate-700 font-sans antialiased">
 
-  <!-- Navigation -->
-  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink-950/80 border-b border-white/5">
-    <nav class="max-w-3xl mx-auto flex items-center justify-between px-6 py-4">
-      <a href="#top" class="font-semibold tracking-tight text-white hover:text-accent-300 transition-colors">Burak Arslan</a>
-      <div class="flex gap-6 text-sm">
-        <a href="#about" class="hover:text-accent-300 transition-colors">About</a>
-        <a href="#publications" class="hover:text-accent-300 transition-colors">Publications</a>
-        <a href="#contact" class="hover:text-accent-300 transition-colors">Contact</a>
-      </div>
-    </nav>
-  </header>
+  <main class="max-w-2xl mx-auto px-6">
 
-  <main id="top" class="max-w-3xl mx-auto px-6">
+    <!-- Header -->
+    <header class="pt-24 pb-12">
+      <h1 class="reveal text-4xl sm:text-5xl font-bold tracking-tight text-slate-900">Burak Arslan</h1>
+      <p class="reveal mt-3 text-lg text-slate-500">Doctoral Researcher · Max Planck Institute for Intelligent Systems &amp; ETH Zurich</p>
 
-    <!-- Hero -->
-    <section class="pt-40 pb-24">
-      <p class="reveal text-accent-400 font-medium text-sm tracking-widest uppercase mb-4">Doctoral Researcher · MPI-IS &amp; ETH Zurich</p>
-      <h1 class="reveal text-5xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
-        Burak Arslan
-      </h1>
-      <p class="reveal mt-6 text-xl text-slate-400 font-serif leading-relaxed max-w-2xl">
-        Magnetically actuated, untethered biomedical systems — jamming and programmable mechanical behavior.
-      </p>
-      <div class="reveal mt-8 flex flex-wrap gap-3">
-        <a href="https://scholar.google.com/citations?user=zvnZYM0AAAAJ&amp;hl=en" target="_blank" rel="noopener"
-           class="px-4 py-2 rounded-full text-sm font-medium bg-accent-500/10 text-accent-300 border border-accent-500/30 hover:bg-accent-500/20 transition-colors">
+      <div class="reveal mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+        <a href="mailto:barslan@is.mpg.de" class="inline-flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 shrink-0">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          barslan@is.mpg.de
+        </a>
+        <a href="mailto:arslanb@ethz.ch" class="inline-flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 shrink-0">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          arslanb@ethz.ch
+        </a>
+        <a href="https://www.linkedin.com/in/burakarslanme" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://scholar.google.com/citations?user=zvnZYM0AAAAJ&amp;hl=en" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-slate-600 hover:text-blue-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 shrink-0">
+            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+          </svg>
           Google Scholar
         </a>
-        <a href="https://github.com/arslanbrk" target="_blank" rel="noopener"
-           class="px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-slate-300 border border-white/10 hover:bg-white/10 transition-colors">
-          GitHub
-        </a>
-        <a href="#contact"
-           class="px-4 py-2 rounded-full text-sm font-medium bg-white/5 text-slate-300 border border-white/10 hover:bg-white/10 transition-colors">
-          Get in touch
-        </a>
       </div>
-    </section>
+    </header>
 
     <!-- About -->
-    <section id="about" class="py-20 border-t border-white/5 scroll-mt-20">
-      <h2 class="reveal text-sm font-semibold tracking-widest uppercase text-accent-400 mb-8">About</h2>
-      <p class="reveal font-serif text-lg leading-relaxed text-slate-300">
+    <section id="about" class="py-10 border-t border-slate-200">
+      <h2 class="reveal text-xs font-semibold tracking-widest uppercase text-slate-400 mb-5">About</h2>
+      <p class="reveal font-serif text-lg leading-relaxed text-slate-700">
         Burak Arslan is a Doctoral Researcher in the Robotic Composites and Compositions Group at the
-        <span class="text-white">Max Planck Institute for Intelligent Systems</span> and the Multiscale Functional
-        and Molecular Imaging Lab at <span class="text-white">ETH Zurich</span>. He is a Doctoral Fellow of the
-        Max Planck ETH Center for Learning Systems. He earned his BSc and MSc degrees in Mechanical Engineering
-        from Bilkent University, Ankara. His current research explores magnetically actuated, untethered biomedical
-        systems that harness jamming and programmable mechanical behavior.
+        Max Planck Institute for Intelligent Systems and the Multiscale Functional and Molecular Imaging Lab
+        at ETH Zurich. He is a Doctoral Fellow of the Max Planck ETH Center for Learning Systems. He earned
+        his BSc and MSc degrees in Mechanical Engineering from Bilkent University, Ankara. His current research
+        explores magnetically actuated, untethered biomedical systems that harness jamming and programmable
+        mechanical behavior.
       </p>
     </section>
 
     <!-- Publications -->
-    <section id="publications" class="py-20 border-t border-white/5 scroll-mt-20">
-      <h2 class="reveal text-sm font-semibold tracking-widest uppercase text-accent-400 mb-8">Publications</h2>
-      <ol class="space-y-4">
+    <section id="publications" class="py-10 border-t border-slate-200">
+      <h2 class="reveal text-xs font-semibold tracking-widest uppercase text-slate-400 mb-5">Publications</h2>
+      <ol class="divide-y divide-slate-100">
 
-        <li class="reveal pub-card rounded-xl border border-white/10 bg-ink-900 hover:border-accent-500/40 p-6">
-          <div class="flex items-baseline gap-3 flex-wrap">
-            <span class="text-xs font-semibold text-accent-300 bg-accent-500/10 border border-accent-500/20 rounded-full px-2.5 py-0.5">2026</span>
-            <span class="text-xs text-slate-500 italic">Advanced Intelligent Systems</span>
+        <li class="reveal py-5 flex gap-5">
+          <span class="text-sm font-medium text-slate-400 w-12 shrink-0 pt-0.5">2026</span>
+          <div>
+            <h3 class="font-semibold text-slate-900 leading-snug">Maneuverable Multilegged Locomotion through Anisotropically Arranged Soft Backbones in a Single-Actuator Modular Miniature Robot</h3>
+            <p class="mt-1 text-sm text-slate-500">Y. Yaman, <span class="text-slate-700 font-medium">B. Arslan</span>, Ş. Ergin, D. M. Aukes, O. Özcan</p>
+            <p class="mt-0.5 text-sm italic text-slate-400">Advanced Intelligent Systems</p>
           </div>
-          <h3 class="mt-3 text-white font-semibold leading-snug">Maneuverable Multilegged Locomotion through Anisotropically Arranged Soft Backbones in a Single-Actuator Modular Miniature Robot</h3>
-          <p class="mt-2 text-sm text-slate-400">Y. Yaman, <span class="text-slate-200 font-medium">B. Arslan</span>, Ş. Ergin, D. M. Aukes, O. Özcan</p>
         </li>
 
-        <li class="reveal pub-card rounded-xl border border-white/10 bg-ink-900 hover:border-accent-500/40 p-6">
-          <div class="flex items-baseline gap-3 flex-wrap">
-            <span class="text-xs font-semibold text-accent-300 bg-accent-500/10 border border-accent-500/20 rounded-full px-2.5 py-0.5">2025</span>
-            <span class="text-xs text-slate-500 italic">Advanced Theory and Simulations</span>
+        <li class="reveal py-5 flex gap-5">
+          <span class="text-sm font-medium text-slate-400 w-12 shrink-0 pt-0.5">2025</span>
+          <div>
+            <h3 class="font-semibold text-slate-900 leading-snug">Anisotropic Surface Microrollers for Endovascular Navigation: A Computational Analysis with a Case Study in Hepatic Perfusion</h3>
+            <p class="mt-1 text-sm text-slate-500"><span class="text-slate-700 font-medium">B. Arslan</span>, U. Bozuyuk, K. Görgülü, E. Yildiz, H. Ozturk, L. Liotta, V. Heinemann, et&nbsp;al.</p>
+            <p class="mt-0.5 text-sm italic text-slate-400">Advanced Theory and Simulations</p>
           </div>
-          <h3 class="mt-3 text-white font-semibold leading-snug">Anisotropic Surface Microrollers for Endovascular Navigation: A Computational Analysis with a Case Study in Hepatic Perfusion</h3>
-          <p class="mt-2 text-sm text-slate-400"><span class="text-slate-200 font-medium">B. Arslan</span>, U. Bozuyuk, K. Görgülü, E. Yildiz, H. Ozturk, L. Liotta, V. Heinemann, et&nbsp;al.</p>
         </li>
 
-        <li class="reveal pub-card rounded-xl border border-white/10 bg-ink-900 hover:border-accent-500/40 p-6">
-          <div class="flex items-baseline gap-3 flex-wrap">
-            <span class="text-xs font-semibold text-accent-300 bg-accent-500/10 border border-accent-500/20 rounded-full px-2.5 py-0.5">2025</span>
-            <span class="text-xs text-slate-500 italic">IEEE Robotics and Automation Letters</span>
+        <li class="reveal py-5 flex gap-5">
+          <span class="text-sm font-medium text-slate-400 w-12 shrink-0 pt-0.5">2025</span>
+          <div>
+            <h3 class="font-semibold text-slate-900 leading-snug">ReLMBot: A Reconfigurable, Legged, Miniature, Modular Robot With Compliant or Rigid, Magnetic Connection Mechanisms</h3>
+            <p class="mt-1 text-sm text-slate-500">M. Uğur, Y. Yaman, <span class="text-slate-700 font-medium">B. Arslan</span>, Ş. Ergin, O. Özcan</p>
+            <p class="mt-0.5 text-sm italic text-slate-400">IEEE Robotics and Automation Letters</p>
           </div>
-          <h3 class="mt-3 text-white font-semibold leading-snug">ReLMBot: A Reconfigurable, Legged, Miniature, Modular Robot With Compliant or Rigid, Magnetic Connection Mechanisms</h3>
-          <p class="mt-2 text-sm text-slate-400">M. Uğur, Y. Yaman, <span class="text-slate-200 font-medium">B. Arslan</span>, Ş. Ergin, O. Özcan</p>
         </li>
 
-        <li class="reveal pub-card rounded-xl border border-white/10 bg-ink-900 hover:border-accent-500/40 p-6">
-          <div class="flex items-baseline gap-3 flex-wrap">
-            <span class="text-xs font-semibold text-accent-300 bg-accent-500/10 border border-accent-500/20 rounded-full px-2.5 py-0.5">2025</span>
-            <span class="text-xs text-slate-500 italic">MARSS — Int. Conf. on Manipulation, Automation and Robotics at Small Scales</span>
+        <li class="reveal py-5 flex gap-5">
+          <span class="text-sm font-medium text-slate-400 w-12 shrink-0 pt-0.5">2025</span>
+          <div>
+            <h3 class="font-semibold text-slate-900 leading-snug">Locomotion Behavior of Magnetic Microrollers in Confined Tubular Geometries Containing Shear-Thinning Fluids</h3>
+            <p class="mt-1 text-sm text-slate-500">M. S. Yorulmaz, U. Bozuyuk, M. Park, <span class="text-slate-700 font-medium">B. Arslan</span>, H. Ozturk, et&nbsp;al.</p>
+            <p class="mt-0.5 text-sm italic text-slate-400">MARSS — Int. Conf. on Manipulation, Automation and Robotics at Small Scales</p>
           </div>
-          <h3 class="mt-3 text-white font-semibold leading-snug">Locomotion Behavior of Magnetic Microrollers in Confined Tubular Geometries Containing Shear-Thinning Fluids</h3>
-          <p class="mt-2 text-sm text-slate-400">M. S. Yorulmaz, U. Bozuyuk, M. Park, <span class="text-slate-200 font-medium">B. Arslan</span>, H. Ozturk, et&nbsp;al.</p>
         </li>
 
-        <li class="reveal pub-card rounded-xl border border-white/10 bg-ink-900 hover:border-accent-500/40 p-6">
-          <div class="flex items-baseline gap-3 flex-wrap">
-            <span class="text-xs font-semibold text-accent-300 bg-accent-500/10 border border-accent-500/20 rounded-full px-2.5 py-0.5">2023</span>
-            <span class="text-xs text-slate-500 italic">IEEE International Conference on Soft Robotics (RoboSoft)</span>
+        <li class="reveal py-5 flex gap-5">
+          <span class="text-sm font-medium text-slate-400 w-12 shrink-0 pt-0.5">2023</span>
+          <div>
+            <h3 class="font-semibold text-slate-900 leading-snug">Effects of Compliance on Path-Tracking Performance of a Miniature Robot</h3>
+            <p class="mt-1 text-sm text-slate-500">M. Uğur, <span class="text-slate-700 font-medium">B. Arslan</span>, A. Özzeybek, O. Özcan</p>
+            <p class="mt-0.5 text-sm italic text-slate-400">IEEE International Conference on Soft Robotics (RoboSoft)</p>
           </div>
-          <h3 class="mt-3 text-white font-semibold leading-snug">Effects of Compliance on Path-Tracking Performance of a Miniature Robot</h3>
-          <p class="mt-2 text-sm text-slate-400">M. Uğur, <span class="text-slate-200 font-medium">B. Arslan</span>, A. Özzeybek, O. Özcan</p>
         </li>
 
       </ol>
-      <p class="reveal mt-6 text-sm text-slate-500">
+      <p class="reveal mt-4 text-sm text-slate-400">
         Full list on
-        <a href="https://scholar.google.com/citations?user=zvnZYM0AAAAJ&amp;hl=en" target="_blank" rel="noopener" class="text-accent-400 hover:text-accent-300 underline underline-offset-4 transition-colors">Google Scholar</a>.
+        <a href="https://scholar.google.com/citations?user=zvnZYM0AAAAJ&amp;hl=en" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 underline underline-offset-4 transition-colors">Google Scholar</a>.
       </p>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-20 border-t border-white/5 scroll-mt-20">
-      <h2 class="reveal text-sm font-semibold tracking-widest uppercase text-accent-400 mb-8">Contact</h2>
-      <p class="reveal text-slate-400 mb-8 max-w-xl">
-        Interested in collaboration or have a question about my research? Send me a message.
-      </p>
-      <form id="contact-form" class="reveal space-y-5 max-w-xl">
-        <div class="grid sm:grid-cols-2 gap-5">
-          <div>
-            <label for="name" class="block text-sm font-medium text-slate-300 mb-1.5">Name</label>
-            <input type="text" id="name" name="name" required
-                   class="w-full rounded-lg bg-ink-900 border border-white/10 px-4 py-2.5 text-white placeholder-slate-600 focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-colors"
-                   placeholder="Your name" />
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-medium text-slate-300 mb-1.5">Email</label>
-            <input type="email" id="email" name="email" required
-                   class="w-full rounded-lg bg-ink-900 border border-white/10 px-4 py-2.5 text-white placeholder-slate-600 focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-colors"
-                   placeholder="you@example.com" />
-          </div>
-        </div>
-        <div>
-          <label for="message" class="block text-sm font-medium text-slate-300 mb-1.5">Message</label>
-          <textarea id="message" name="message" rows="5" required
-                    class="w-full rounded-lg bg-ink-900 border border-white/10 px-4 py-2.5 text-white placeholder-slate-600 focus:outline-none focus:border-accent-500 focus:ring-1 focus:ring-accent-500 transition-colors resize-y"
-                    placeholder="Your message…"></textarea>
-        </div>
-        <button type="submit"
-                class="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-6 py-2.5 font-medium text-white hover:bg-accent-400 active:scale-[0.98] transition-all">
-          Send message
-        </button>
-        <p id="form-status" class="text-sm text-accent-300 opacity-0 transition-opacity duration-500">Opening your email client…</p>
-      </form>
     </section>
 
   </main>
 
-  <footer class="border-t border-white/5 py-10 mt-8">
-    <div class="max-w-3xl mx-auto px-6 flex items-center justify-between text-sm text-slate-500">
-      <span>© <span id="year"></span> Burak Arslan</span>
-      <a href="#top" class="hover:text-accent-300 transition-colors">Back to top ↑</a>
+  <footer class="border-t border-slate-200 py-8 mt-6">
+    <div class="max-w-2xl mx-auto px-6 text-sm text-slate-400">
+      © <span id="year"></span> Burak Arslan
     </div>
   </footer>
 
   <script>
-    // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Scroll-reveal animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -211,21 +154,6 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-    // Contact form → opens the visitor's email client with a prefilled message.
-    // To use a hosted form service instead (e.g. Formspree), replace this handler
-    // with a fetch() POST to your form endpoint.
-    const CONTACT_EMAIL = 'burak.ars001@gmail.com';
-    document.getElementById('contact-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const subject = encodeURIComponent(`Website message from ${name}`);
-      const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-      document.getElementById('form-status').style.opacity = '1';
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-    });
   </script>
 </body>
 </html>
